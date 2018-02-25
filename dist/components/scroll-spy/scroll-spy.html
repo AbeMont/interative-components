@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scroll Spy</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <!-- This is the main code for Scroll Spy -->
+
+    <header class="scroll-spy">
+      <div class="scroll-spy__wrapper scroll-spy__wrapper--purple">
+
+        <div class="scroll-spy__elements">
+          <div class="scroll-spy__heading">
+            <h4>Scroll Spy Heading</h4>
+          </div>
+          <div class="scroll-spy__title">
+            <p>Scroll Section Titles</p>
+          </div>
+        </div>
+        <span class="page__meter" style="height: 5px;background: green;position: absolute; top: 51px;"></span>
+      </div>
+    </header>
+
+    <nav class="scroll-nav"></nav>
+
+    <section class="hero">
+      <h1 class="hero-title">Scroll Down</h1>
+    </section>
+
+    <div class="container">
+      <!-- The data attribute [data-spy] will be the targets for the scroll spy -->
+      <section class="scroll-spy-section" data-spy='Welcome to Section 1'>
+        <h1 class="test">Scroll Spy Component</h1>
+        <h3>Section 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <img src="http://via.placeholder.com/350x150" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+      </section>
+      <section class="scroll-spy-section" data-spy='Welcome to Section 2'>
+        <h3>Section 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+      </section>
+      <section class="scroll-spy-section" data-spy='Welcome to Section 3'>
+        <h3>Section 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <img src="http://via.placeholder.com/350x150" alt="">
+        <img src="http://via.placeholder.com/350x150" alt="">
+        <img src="http://via.placeholder.com/350x150" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+      </section>
+      <section class="scroll-spy-section" data-spy='Welcome to Section 4'>
+        <h3>Section 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum. Aliquam sollicitudin neque eu mauris suscipit, in accumsan purus rhoncus. Suspendisse convallis arcu egestas elementum laoreet. Nullam hendrerit mattis pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempus elit ac leo ultricies efficitur. Duis sed urna convallis, feugiat felis ut, semper diam. Pellentesque tempus in lectus ut semper. Aenean sed euismod elit. Maecenas eget urna id augue dapibus fermentum et eu erat. Ut sagittis felis justo, rhoncus sagittis augue ultricies non. Ut consectetur tellus id neque ullamcorper ornare. Cras a felis enim.</p>
+      </section>
+
+    </div>
+
+
+    <script src="./js/scroll-spy.js"></script>
+  </body>
+</html>

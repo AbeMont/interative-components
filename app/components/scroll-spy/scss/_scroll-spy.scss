@@ -1,0 +1,92 @@
+.scroll-spy {
+  //position: relative;
+  &__wrapper {
+    width: 100%;
+    min-height: 56px;
+    position: sticky;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.4s;
+    // modifiers
+    &--purple {
+      background: #651142;
+    }
+  }
+  &__elements {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    .scroll-spy__heading {
+      flex:1;
+    }
+    .scroll-spy__title {
+      flex:1;
+      text-align: right;
+    }
+    h4,p {
+      margin: 0;
+    }
+  }
+  &.active {
+    .scroll-spy__wrapper {
+      position: fixed;
+      animation-duration: 0.4s;
+      animation-name: spy-slide-down;
+    }
+  }
+}
+
+.scroll-nav {
+  position: fixed;
+  right: 50px;
+  bottom: 15%;
+  transform: translateX(200px);
+  transition: all 0.3s;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    background: #651142;
+    padding:10px;
+    margin: 0;
+    li {
+      padding: 10px 16px 10px 16px;
+      a {
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.7;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spy-slide-down {
+  from {
+    transform: translateY(-56px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spy-nav-slide {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media (min-width:450px) {
+  .scroll-nav {
+    transform: translateX(0px);
+    animation-duration: 0.3s;
+    animation-name: spy-nav-slide;
+  }
+}

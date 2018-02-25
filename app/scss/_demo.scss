@@ -1,0 +1,45 @@
+/////////////////
+// Demo Styles
+///////////////
+
+/* Demo Purposes Only */
+
+//////////////////////
+// Initial Body Style
+////////////////////
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+//////////////////////
+// Scroll Spy Demo
+////////////////////
+
+.hero {
+  background: #CB87AF;
+  padding: 72px 0;
+  min-height: 350px;
+  h1 {
+    &.hero-title {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.scroll-spy-section {
+  padding: 64px 0;
+  h3{
+    margin: 0;
+  }
+  p{
+    margin: 24px 0;
+  }
+}

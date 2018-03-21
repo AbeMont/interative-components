@@ -1,0 +1,26 @@
+.accordion {
+  width:100%;
+  background: #CB87AF;
+  &__btn {
+    padding: 16px;
+    border:none;
+    border-bottom: 1px solid #ededed;
+    display: block;
+    background: #651142;
+    color: #fff;
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__content {
+    padding:0 16px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.4s;
+    &.active {
+      height: 100%;
+      transition: height 0.4s;
+    }
+  }
+}

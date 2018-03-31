@@ -1,0 +1,77 @@
+.modal {
+  width: 100%;
+  position: fixed;
+  display: none;
+  &__body {
+    width: 80%;
+    margin: 56px auto;
+    position: relative;
+    animation-name: animate-modal-down;
+    animation-timing-function:ease-out;
+    animation-duration: 0.2s;
+  }
+  &__title {
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    background: #651142;
+    padding: 20px 0px;
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+      margin: 0;
+      padding: 0px 32px;
+    }
+  }
+  &__content {
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    height: auto;
+    p {
+      margin: 0;
+      padding: 32px;
+    }
+  }
+  &__closeBtn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &:after {
+    content: "";
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+@keyframes animate-modal-down {
+  from {
+    top: -365px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes animate-modal-up {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -365px;
+  }
+}

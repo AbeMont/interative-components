@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- Modal 1 -->
+
+    <section class="modal" data-modal="1">
+      <div class="modal__body">
+        <div class="modal__title">
+          <h1>This is the title for modal 1</h1>
+          <button type="button" name="button" class="modal__closeBtn" data-close-modal>X</button>
+        </div>
+        <div class="modal__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 2 -->
+    <section class="modal" data-modal="2">
+      <div class="modal__body">
+        <div class="modal__title">
+          <h1>This is the title for modal 2</h1>
+          <button type="button" name="button" class="modal__closeBtn" data-close-modal>X</button>
+        </div>
+        <div class="modal__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in odio vel odio ullamcorper pharetra quis at sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus bibendum hendrerit dapibus. In sit amet eleifend ante, ac consectetur ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Modal -->
+
+    <section class="modal" data-modal="3">
+      <div class="modal__body">
+        <div class="modal__title">
+          <h1>Video Modal</h1>
+          <button type="button" name="button" class="modal__closeBtn" data-close-modal>X</button>
+        </div>
+        <div class="modal__content">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/AaGK-fj-BAM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="demo-modal-section">
+      <button type="button" name="button" data-open-modal="1" class="demo-modal-btn">Open Modal 1</button>
+      <button type="button" name="button" data-open-modal="2" class="demo-modal-btn">Open Modal 2</button>
+      <button type="button" name="button" data-open-modal="3" class="demo-modal-btn">Open Video Modal</button>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

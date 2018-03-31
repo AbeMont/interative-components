@@ -2,3 +2,15 @@
 @import "./_demo.scss";
 @import "../components/scroll-spy/scss/_scroll-spy";
 @import "../components/accordion/scss/_accordion";
+@import "../components/modal/scss/_modal";
+
+//////////////////////
+// Initial Body Style
+////////////////////
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

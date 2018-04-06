@@ -43,14 +43,6 @@ var currentSection;
     }
 
 
-    console.log( (window.pageYOffset + window.innerHeight) ,document.body.scrollHeight);
-    console.log( parseInt(((window.pageYOffset + window.innerHeight)/document.body.scrollHeight)*100 )+'%' );
-
-
-
-
-
-
     // Trigger the active fixed class
     if(window.pageYOffset >= scrollSpy.children[0].scrollHeight){
       scrollSpy.classList.add('active');

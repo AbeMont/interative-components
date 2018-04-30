@@ -3,7 +3,7 @@
   position: fixed;
   display: none;
   &__body {
-    width: 80%;
+    max-width: 350px;
     margin: 56px auto;
     position: relative;
     animation-name: animate-modal-down;
@@ -55,6 +55,24 @@
   }
   &.active {
     display: block;
+  }
+}
+
+// Media Queries
+
+@media (min-width:500px) {
+  .modal{
+    &__body {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (min-width:750px) {
+  .modal{
+    &__body {
+      max-width: 650px;
+    }
   }
 }
 

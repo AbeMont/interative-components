@@ -29,6 +29,12 @@
       margin: 0;
     }
   }
+  &__meter {
+    height: 5px;
+    background: #0EBDCC;
+    position: absolute;
+    top: 51px;
+  }
   &.active {
     .scroll-spy__wrapper {
       position: fixed;

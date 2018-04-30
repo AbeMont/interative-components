@@ -36,11 +36,11 @@ var currentSection;
 window.addEventListener('scroll', function () {
 
   //document.querySelector('.page__meter').style.width = '0%';
-  document.querySelector('.page__meter').style.transition = 'width 0.3s';
-  document.querySelector('.page__meter').style.width = parseInt((window.pageYOffset + window.innerHeight) / document.body.scrollHeight * 100) + '%';
+  document.querySelector('.scroll-spy__meter').style.transition = 'width 0.3s';
+  document.querySelector('.scroll-spy__meter').style.width = parseInt((window.pageYOffset + window.innerHeight) / document.body.scrollHeight * 100) + '%';
 
   if (window.pageYOffset === 0) {
-    document.querySelector('.page__meter').style.width = '0%';
+    document.querySelector('.scroll-spy__meter').style.width = '0%';
   }
 
   // Trigger the active fixed class

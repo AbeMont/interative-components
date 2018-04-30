@@ -15,12 +15,12 @@
   }
   &__content {
     padding:0 16px;
-    height: 0;
+    max-height: 0;
     overflow-y: hidden;
-    transition: height 0.4s;
+    transition: all 0.5s ease-out;
     &.active {
-      height: 100%;
-      transition: height 0.4s;
+      height: auto;
+      transition: all 0.5s ease-out;
     }
   }
 }

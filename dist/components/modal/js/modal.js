@@ -7,6 +7,14 @@ var openModal = Array.from(document.querySelectorAll('[data-open-modal]'));
 var modals = Array.from(document.querySelectorAll('[data-modal]'));
 var closeBtns = Array.from(document.querySelectorAll('[data-close-modal]'));
 
+modals.forEach(function (modal) {
+  window.addEventListener('click', function () {
+    if (event.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+});
+
 openModal.forEach(function (modalBtn) {
 
   // Event listener for button clicked

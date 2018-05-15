@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/switches/js/switches.js"],"names":["console","log"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,UAAZ","file":"switches.js","sourcesContent":["console.log('Switches');\r\n"]}

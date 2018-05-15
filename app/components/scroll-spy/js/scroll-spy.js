@@ -33,7 +33,10 @@ var currentSection;
 // Event listener to scrollSpy
   window.addEventListener('scroll', function(){
 
-    //document.querySelector('.page__meter').style.width = '0%';
+    /////////////////////
+    // Scroll Spy Meter
+    ///////////////////
+
     document.querySelector('.scroll-spy__meter').style.transition = 'width 0.3s';
     document.querySelector('.scroll-spy__meter').style.width = parseInt(((window.pageYOffset + window.innerHeight)/document.body.scrollHeight)*100 )+'%';
 
@@ -63,15 +66,12 @@ var currentSection;
             scrollNav.children[0].children[index].children[0].classList.remove('active')
           }
 
-          //console.log(section, section.getBoundingClientRect().top , parseInt('-'+section.scrollHeight));
-
        } else if (section.getBoundingClientRect().top >= 0) {
            scrollNav.children[0].children[index].children[0].classList.remove('active')
           }
 
       if (array[0].getBoundingClientRect().top > 56) {
         title.textContent = initialTitle;
-
       }
 
     });
@@ -80,7 +80,7 @@ var currentSection;
 // Random ID Generator
 
 function generateId(){
-    var Id = Math.floor(Math.random()*9999);
+    var Id = 'b' + Math.floor(Math.random()*9999);
     return Id;
 }
 
@@ -106,3 +106,17 @@ function generateEl(cb) {
 };
 
 generateEl(generateId);
+
+///// Scrolling animations and functions
+
+console.log(Array.from(document.querySelectorAll('ul.scroll-list li a')));
+console.log(text);
+
+Array.from(document.querySelectorAll('ul.scroll-list li a')).forEach(function(anchor){
+  anchor.addEventListener('click', function(){
+    console.log(anchor);
+    console.log(anchor.attributes[0].textContent);
+    var scrollEl = document.querySelector(anchor.attributes[0].textContent);
+    console.log(scrollEl);
+  });
+});

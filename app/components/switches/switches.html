@@ -8,9 +8,84 @@
   </head>
   <body>
 
-    <div class="switch">
-      <h1>Switch</h1>
+
+
+    <div class="container">
+
+      <div class="horizontal-switches">
+
+        <h3>Horizontal Switches</h3>
+
+        <div class="switch">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-1" name="switch-1" value="" checked>
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-1" data-switch-on ="On" data-switch-off="Off"></label>
+          </div>
+        </div>
+
+        <div class="switch">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-2" name="switch-2" value="">
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-2" data-switch-on ="On" data-switch-off="Off"></label>
+          </div>
+        </div>
+
+        <div class="switch switch--disabled">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-3" name="switch-2" value="" disabled>
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-3" data-switch-on ="On" data-switch-off="Off" data-switch-disabled="Disabled"></label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="vertical-switches">
+
+        <h3>Vertical Switches</h3>
+
+        <div class="switch switch--vertical">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-4" name="switch-4" value="" checked>
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-4" data-switch-on ="On" data-switch-off="Off"></label>
+          </div>
+        </div>
+
+        <div class="switch switch--vertical">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-5" name="switch-5" value="">
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-5" data-switch-on ="On" data-switch-off="Off"></label>
+          </div>
+        </div>
+
+        <div class="switch switch--vertical switch--disabled">
+          <div class="switch__input">
+            <input type="checkbox" id="switch-6" name="switch-6" value="" disabled>
+            <span class="switch__dial"></span>
+          </div>
+          <div class="switch__desc">
+            <label for="switch-6" data-switch-on ="On" data-switch-off="Off" data-switch-disabled="Disabled"></label>
+          </div>
+        </div>
+
+      </div>
+
     </div>
+
 
     <script src="js/switches.js" ></script>
   </body>

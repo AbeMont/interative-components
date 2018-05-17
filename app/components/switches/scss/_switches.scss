@@ -4,6 +4,7 @@
   display: inline-block;
   cursor: pointer;
   &__input {
+    box-shadow: 3px 3px 8px #aaaaaa;
     border-radius: 3px;
     width: 45px;
     height: 25px;
@@ -111,6 +112,7 @@
       background: #CB87AF;
       position: relative;
       input {
+        box-shadow: 10px 10px 5px #aaaaaa;
         cursor: pointer;
         position: absolute;
         opacity: 0;

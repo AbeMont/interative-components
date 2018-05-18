@@ -4,12 +4,12 @@
   display: inline-block;
   cursor: pointer;
   &__input {
-    box-shadow: 3px 3px 8px #aaaaaa;
     border-radius: 3px;
     width: 45px;
     height: 25px;
-    background: #CB87AF;
+    background: $color-primary-5;
     position: relative;
+    @include global-box-shadow;
     input {
       cursor: pointer;
       position: absolute;
@@ -22,7 +22,7 @@
     }
     input[type=checkbox]:checked + span {
       &.switch__dial{
-        background: #651142;
+        background: $color-primary-0;
         opacity: 1;
         transition: all 0.2s;
         transform: translateX(25px);
@@ -37,7 +37,7 @@
     }
     input[type=checkbox]:disabled + span {
       &.switch__dial{
-        background: #651142;
+        background: $color-primary-0;
         opacity: 0.5;
         transition: all 0.2s ease-in;
         transform: translateX(0px);
@@ -49,7 +49,7 @@
         &:before {
           content: "";
           border-radius: 3px;
-          border: 1px solid #000;
+          border: 1px solid $color-black;
           position: absolute;
           width: 95%;
           height: 91%;
@@ -63,7 +63,7 @@
     top: 0;
     height: 25px;
     width: 20px;
-    background: #651142;
+    background: $color-primary-0;
     opacity: 0.5;
     position: absolute;
     transition: all 0.2s ease-in;
@@ -72,7 +72,7 @@
     text-align: center;
     &:after {
       content: "O";
-      color: #fff;
+      color: $color-white;
       font-size: 12px;
       position: relative;
       top: 2px;
@@ -109,10 +109,10 @@
       width: 25px;
       margin: 0 auto;
       height: 43px;
-      background: #CB87AF;
+      background: $color-primary-5;
       position: relative;
       input {
-        box-shadow: 10px 10px 5px #aaaaaa;
+        @include global-box-shadow;
         cursor: pointer;
         position: absolute;
         opacity: 0;
@@ -124,7 +124,7 @@
       }
       input[type=checkbox]:checked + span {
         &.switch__dial{
-          background: #651142;
+          background: $color-primary-0;
           opacity: 1;
           transition: all 0.2s;
           transform: translateY(0px);
@@ -139,7 +139,7 @@
       }
       input[type=checkbox]:disabled + span {
         &.switch__dial{
-          background: #651142;
+          background: $color-primary-0;
           opacity: 0.5;
           transition: all 0.2s ease-in;
           transform: translateY(25px);
@@ -151,7 +151,7 @@
           &:before {
             content: "";
             border-radius: 3px;
-            border: 1px solid #000;
+            border: 1px solid $color-black;
             position: absolute;
             width: 90%;
             height: 91%;
@@ -165,7 +165,7 @@
       top: 0;
       height: 18px;
       width: 25px;
-      background: #651142;
+      background: $color-primary-0;
       opacity: 0.5;
       position: absolute;
       transition: all 0.2s ease-in;
@@ -174,7 +174,7 @@
       text-align: center;
       &:after {
         content: "O";
-        color: #fff;
+        color: $color-white;
         font-size: 12px;
         position: relative;
         bottom: 1px;

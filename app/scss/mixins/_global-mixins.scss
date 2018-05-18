@@ -1,0 +1,7 @@
+@mixin global-box-shadow {
+  box-shadow: 3px 3px 8px #aaaaaa;
+}
+
+@mixin global-border-bottom {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}

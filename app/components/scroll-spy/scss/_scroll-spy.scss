@@ -1,18 +1,18 @@
 .scroll-spy {
-  //position: relative;
+
   &__wrapper {
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0,0.4);
     width: 100%;
     min-height: 56px;
     position: sticky;
-    color: #fff;
+    color: $color-white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all 0.4s;
     // modifiers
     &--purple {
-      background: #651142;
+      background: $color-primary-0;
     }
   }
   &__elements {
@@ -32,7 +32,7 @@
   }
   &__meter {
     height: 5px;
-    background: #0EBDCC;
+    background: $color-teal;
     position: absolute;
     top: 51px;
   }
@@ -56,14 +56,14 @@
   ul {
     list-style-type: none;
     padding: 0;
-    background: #651142;
+    background: $color-primary-0;
     padding:10px;
     margin: 0;
     li {
       padding: 10px 16px 10px 16px;
       a {
         font-size: 14px;
-        color: #fff;
+        color: $color-white;
         text-decoration: none;
         opacity: 0.7;
         &.active {

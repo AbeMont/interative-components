@@ -1,14 +1,14 @@
 .accordion {
   width:100%;
-  background: #CB87AF;
+  background: $color-primary-5;
   &__btn {
     padding: 16px;
     border:none;
-    border-bottom: 1px solid #ededed;
     display: block;
-    background: #651142;
-    color: #fff;
+    background:$color-primary-0;
+    color: $color-white;
     width: 100%;
+    @include global-border-bottom;
     &:hover {
       cursor: pointer;
     }

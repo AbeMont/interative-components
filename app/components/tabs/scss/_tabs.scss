@@ -10,8 +10,8 @@
           border: none;
           cursor: pointer;
           text-decoration: none;
-          background: #651142;
-          color: #fff;
+          background: $color-primary-0;
+          color: $color-white;
           padding: 16px;
           border-radius: 5px 5px 0px 0px;
           display: block;
@@ -23,10 +23,11 @@
 
   }
   &__section {
-    background: #CB87AF;
+    background: $color-primary-5;
     display: none;
     border-radius: 0 5px 5px 5px;
     padding: 16px;
+    @include global-box-shadow;
     p {
       margin: 0;
     }

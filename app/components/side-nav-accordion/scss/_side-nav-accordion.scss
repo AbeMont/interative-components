@@ -1,6 +1,6 @@
 .side-nav-accordion {
   top: 0;
-  background: #651142;
+  background: $color-primary-0;
   position: fixed;
   height: 100vh;
   width: 250px;
@@ -16,14 +16,14 @@
     width: 100%;
     li {
       list-style-type: none;
-      background: #651142;
+      background: $color-primary-0;
       a {
         font-size: 14px;
         display: block;
         text-decoration: none;
-        color: #fff;
+        color: $color-white;
         padding: 12px 12px;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
+        @include global-border-bottom;
         i {
           float: right;
           &:before {
@@ -41,7 +41,7 @@
       }
     }
     &.sub-section {
-      background: #CB87AF;
+      background: $color-primary-5;
       margin-top: 0;
       padding-bottom: 0;
       padding-top: 0;
@@ -49,17 +49,17 @@
       overflow: hidden;
       transition: height 0.3s ease-out;
       li {
-        background: #CB87AF;
+        background: $color-primary-5;
         a {
           padding-left: 24px;
-          color: #000;
+          color: $color-black;
         }
       }
     }
   }
   .close-btn {
     cursor: pointer;
-    color: #fff;
+    color: $color-white;
     font-size: 18px;
     position: absolute;
     right: 10px;

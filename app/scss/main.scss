@@ -1,7 +1,7 @@
 
 @import "./variables/_colors";
 @import "./mixins/_global-mixins";
-@import "./_demo";
+
 @import "../components/scroll-spy/scss/_scroll-spy";
 @import "../components/accordion/scss/_accordion";
 @import "../components/modal/scss/_modal";
@@ -9,6 +9,8 @@
 @import "../components/side-nav-accordion/scss/_side-nav-accordion";
 @import "../components/switches/scss/_switches";
 @import "../components/navigation-header/scss/_navigation-header";
+
+@import "./_demo";
 
 //////////////////////
 // Initial Body Style

@@ -96,3 +96,16 @@
 .horizontal-switches:first-child {
   padding-top: 25px;
 }
+
+///////////
+// Colors
+//////////
+
+.color-demos {
+  display: block;
+  .color {
+    height: 60px;
+    width:60px;
+    display: inline-block;
+  }
+}

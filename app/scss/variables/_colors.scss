@@ -27,3 +27,48 @@ $color-teal: #0EBDCC;
 $color-white: #fff;
 $color-black: #000;
 $color-light-grey: #ededed;
+
+// 1950s Colors 1
+$color-primary-red: #BF4D28;
+$color-primary-yellow: #E6AC27;
+$color-primary-sand: #F6F7BD;
+$color-primary-blue: #80BCA3;
+$color-primary-green: #88A764;
+$color-primary-grey: #655643;
+
+.background--primary-red {
+  background: $color-primary-red;
+}
+.background--primary-yellow {
+  background: $color-primary-yellow;
+}
+.background--primary-sand {
+  background: $color-primary-sand;
+}
+.background--primary-blue {
+  background: $color-primary-blue;
+}
+.background--primary-grey {
+  background: $color-primary-grey;
+}
+
+
+// 1950s Colors 1
+
+$color-secondary-red: #DC3F1C;
+$color-secondary-yellow: #D8A027;
+$color-secondary-sand: #EBE18C;
+$color-secondary-blue: #448D7A;
+
+.background--secondary-red {
+  background: $color-secondary-red;
+}
+.background--secondary-yellow {
+  background: $color-secondary-yellow;
+}
+.background--secondary-sand {
+  background: $color-secondary-sand;
+}
+.background--secondary-blue {
+  background: $color-secondary-blue;
+}

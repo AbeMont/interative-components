@@ -1,0 +1,66 @@
+.header {
+  &__desktop {
+      background: #651142;
+      box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      min-height: 56px;
+      position: fixed;
+      top: -1px;
+      color: #fff;
+      transition: all 0.4s;
+      z-index: 9999;
+      a {
+        color: $color-white;
+        i {
+          font-size: 1.2em;
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+      }
+  }
+  &__mobile {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .side-nav-accordion {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background: #CB87AF;
+      position: absolute;
+      top: 55px;
+      width: 100%;
+      transform: translateX(-100%);
+      ul {
+        margin: 0;
+        padding: 0;
+        &.sub-section {
+          li {
+            a {
+              background: $color-white;
+            }
+          }
+        }
+      }
+      &.active {
+        transform: translateX(0%);
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__mobile-icons {
+    padding-top: 15px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+}

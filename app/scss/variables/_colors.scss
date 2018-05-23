@@ -59,6 +59,7 @@ $color-secondary-red: #DC3F1C;
 $color-secondary-yellow: #D8A027;
 $color-secondary-sand: #EBE18C;
 $color-secondary-blue: #448D7A;
+$color-secondary-grey: #534027;
 
 .background--secondary-red {
   background: $color-secondary-red;
@@ -71,4 +72,7 @@ $color-secondary-blue: #448D7A;
 }
 .background--secondary-blue {
   background: $color-secondary-blue;
+}
+.background--secondary-grey {
+  background: $color-secondary-grey;
 }

@@ -3,8 +3,7 @@ console.log('Navigation Header');
 var openMobileMenu = document.querySelector('.header .header__desktop [data-open-sideNav]');
 var closeMobileMenu = document.querySelector('.header .header__desktop [data-close-sideNav]');
 var mobileHeader = document.querySelector('.header__mobile');
-console.log(mobileHeader);
-console.log(sideNav);
+
 openMobileMenu.addEventListener('click', function(){
   toggleIcon(this,closeMobileMenu);
 });

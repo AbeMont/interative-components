@@ -1,6 +1,6 @@
 .header {
   &__desktop {
-    background: #651142;
+    background: $color-secondary-blue;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
     width: 100%;
     min-height: 56px;
@@ -35,7 +35,7 @@
     .side-nav-accordion {
       overflow-y: scroll;
       overflow-x: hidden;
-      background: #CB87AF;
+      background: $color-primary-blue;
       position: absolute;
       top: 55px;
       width: 100%;
@@ -68,14 +68,69 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+  &__main {
+    position: relative;
+    ul {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      bottom: -22px;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in;
+      li {
+        display: inline-block;
+        a {
+          padding: 18px;
+          display: inline-block;
+          position: relative;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
-//
-// @keyframes sideMenuindex {
-//   from{
-//     z-index: -1;
-//   }
-//   to {
-//     z-index: 1;
-//   }
-// }
+
+@media (min-width:750px) {
+  .header {
+    &__desktop {
+      
+    }
+    &__mobile-icons {
+      opacity: 0;
+    }
+    &__main {
+      ul {
+        transform: translateX(0%);
+        li {
+          a {
+            &:before {
+              content: "";
+              height: 5px;
+              width: 100%;
+              background: $color-white;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              opacity: 0;
+              transition: opacity 0.4s;
+            }
+            &:hover {
+              &:before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__mobile {
+      .side-nav-accordion {
+        display: none;
+      }
+    }
+  }
+}

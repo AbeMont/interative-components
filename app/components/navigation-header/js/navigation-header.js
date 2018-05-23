@@ -15,11 +15,11 @@ closeMobileMenu.addEventListener('click', function(){
 
 function toggleIcon(hideElement,showElement){
 
+  // Delay the animation due to z-index when we remove the active class
   if (!mobileHeader.classList.contains('active')) {
-    console.log('I have it slow me down');
     mobileHeader.classList.add('active');
   } else {
-      setTimeout(function(){mobileHeader.classList.remove('active');},400);
+      setTimeout(function(){mobileHeader.classList.remove('active');},350);
   }
 
   if (hideElement.classList.contains('active')) {

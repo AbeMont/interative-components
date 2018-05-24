@@ -1,1 +1,1 @@
-# interative-components
+# interactive-components

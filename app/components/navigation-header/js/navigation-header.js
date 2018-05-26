@@ -18,7 +18,7 @@ function toggleIcon(hideElement,showElement){
   if (!mobileHeader.classList.contains('active')) {
     mobileHeader.classList.add('active');
   } else {
-      setTimeout(function(){mobileHeader.classList.remove('active');},350);
+    mobileHeader.classList.remove('active');
   }
 
   if (hideElement.classList.contains('active')) {

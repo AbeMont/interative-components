@@ -84,11 +84,30 @@
       transition: transform 0.4s ease-in;
       li {
         display: inline-block;
+        position: relative;
         a {
           padding: 18px;
           display: inline-block;
           position: relative;
           font-weight: bold;
+        }
+        &:hover a + .header__hover-menu {
+          display: block;
+        }
+      }
+      &.header__hover-menu {
+        display: none;
+        width: 150px;
+        transition: height 0.4s ease-out;
+        background: $color-primary-blue;
+        top: 54px;
+        left: 0px;
+        li {
+          display: block;
+          background: $color-primary-blue;
+          a {
+            width: 100%;
+          }
         }
       }
     }

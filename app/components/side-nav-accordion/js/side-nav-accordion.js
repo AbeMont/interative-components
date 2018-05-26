@@ -7,7 +7,6 @@ var subNav_Toggle_Menus = Array.from(document.querySelectorAll('[data-toggle-sub
 
 sideNavBtn.addEventListener('click', function(){
   sideNav.classList.add('active');
-  console.log(subNav_Toggle_Menus);
 });
 
 closeSideNavBtn.addEventListener('click', function () {
@@ -16,7 +15,6 @@ closeSideNavBtn.addEventListener('click', function () {
 
 subNav_Toggle_Menus.forEach(function(el){
   el.addEventListener('click',function(){
-    console.log(el);
     el.classList.toggle('active');
     var subnav = el.nextElementSibling;
     if(subnav.style.height){

@@ -24,13 +24,13 @@
   &__mobile {
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
-    z-index: -1;
+    transform: translateX(-100%);
     &.active {
-      z-index: 0;
-      position: fixed;
+      transform: translateX(0%);
+      transition: transform 0.4s
     }
     .side-nav-accordion {
       overflow-y: scroll;
@@ -97,7 +97,7 @@
 @media (min-width:750px) {
   .header {
     &__desktop {
-      
+
     }
     &__mobile-icons {
       opacity: 0;

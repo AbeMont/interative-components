@@ -17,6 +17,7 @@ var batch = require('gulp-batch');
 var src = {
   sass: 'app/scss/main.scss',
   html: 'app/**/*.html',
+  assets: 'app/assets/**/*',
   js: 'app/**/*.js',
   dist: 'dist'
 }
@@ -28,6 +29,7 @@ var src = {
 var watchObj = {
   sass: 'app/**/*.scss',
   html: 'app/**/*.html',
+  assets: 'app/assets/**/*',
   babel: 'app/**/*.js'
 }
 
@@ -54,6 +56,15 @@ gulp.task('sass', function () {
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(src.dist + '/css'))
   .pipe(browserSync.stream())
+});
+
+//////////////
+// Assets Task
+//////////////
+
+gulp.task('assets', function(){
+  return gulp.src(src.assets)
+  .pipe(gulp.dest(src.dist + '/assets'))
 });
 
 //////////////////
@@ -85,6 +96,7 @@ gulp.task('watch', function () {
   gulp.watch(watchObj.sass, ['sass']);
   gulp.watch(watchObj.html,  ['html']).on('change', browserSync.reload);
   gulp.watch(watchObj.babel,  ['babel']).on('change', browserSync.reload);
+  gulp.watch(watchObj.assets,  ['assets']).on('change', browserSync.reload)
 
   watch(watchObj.sass , batch(function (events, done) {
     gulp.start('sass', done);
@@ -101,12 +113,10 @@ gulp.task('watch', function () {
     console.log('babel batch');
   }));
 
-  // for(prop in watchObj) {
-  //   watch(watchObj[prop] , batch(function (events, done) {
-  //     gulp.start('' + prop, done);
-  //     console.log(prop +' batch');
-  //   }));
-  // }
+  watch(watchObj.assets, batch(function (events, done) {
+    gulp.start('assets', done);
+    console.log('assets batch');
+  }));
 
 });
 
@@ -130,4 +140,4 @@ gulp.task('build:dist',['html','sass','babel']);
 // Launch the Tasks
 //////////////////
 
-gulp.task('default',['html','sass','babel','watch']);
+gulp.task('default',['html','sass','assets','babel','watch']);

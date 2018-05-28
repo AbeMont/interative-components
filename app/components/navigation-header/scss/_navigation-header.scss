@@ -114,7 +114,13 @@
   }
   &__subnav {
     &--active {
-
+      &:before {
+        @include font-awesome;
+        content: "\f107";
+        position: absolute;
+        top: 18px;
+        right: -5px;
+      }
     }
   }
 }

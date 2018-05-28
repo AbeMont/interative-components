@@ -5,3 +5,8 @@
 @mixin global-border-bottom {
   border-bottom: 1px solid rgba(255,255,255,0.3);
 }
+
+@mixin font-awesome {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}

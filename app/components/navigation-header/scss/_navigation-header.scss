@@ -107,6 +107,9 @@
           background: $color-primary-blue;
           a {
             width: 100%;
+            &:before {
+              background: none;
+            }
           }
         }
       }

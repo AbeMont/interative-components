@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/forms/js/forms.js"],"names":["console","log"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,OAAZ","file":"forms.js","sourcesContent":["console.log('Forms');\r\n"]}

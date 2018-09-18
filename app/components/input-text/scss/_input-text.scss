@@ -1,0 +1,13 @@
+.input-element {
+    margin: 8px;
+    display: inline-block;
+    // label {
+
+    // }
+    input[type="text"] {
+        padding: 4px;
+        &:focus {
+            outline: 1px solid red;
+        }
+    }
+}

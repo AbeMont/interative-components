@@ -11,6 +11,12 @@
 @import "../components/switches/scss/_switches";
 @import "../components/navigation-header/scss/_navigation-header";
 @import "../components/forms/scss/_forms";
+@import "../components/input-text/scss/_input-text.scss";
+
+@font-face {
+  font-family: "atomic-age";
+  src: url("../assets/fonts/atomic-age/AtomicAge-Regular.ttf");
+}
 
 @import "./_demo";
 
@@ -19,7 +25,7 @@
 ////////////////////
 
 body {
-  font-family: sans-serif;
+  font-family: atomic-age;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

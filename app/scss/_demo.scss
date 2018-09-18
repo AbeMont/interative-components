@@ -24,7 +24,7 @@
 
 .component-list {
   ul {
-    width: 150px;
+    width: 200px;
     list-style-type: none;
     padding: 0;
     li {
@@ -46,7 +46,7 @@
 ////////////////////
 
 .hero {
-  background: #CB87AF;
+  background: $color-primary-blue;
   padding: 72px 0;
   min-height: 350px;
   h1 {

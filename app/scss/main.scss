@@ -12,6 +12,7 @@
 @import "../components/navigation-header/scss/_navigation-header";
 @import "../components/forms/scss/_forms";
 @import "../components/input-text/scss/_input-text.scss";
+@import "../components/hero-section/scss/_hero-section.scss";
 
 @font-face {
   font-family: "atomic-age";
@@ -25,10 +26,18 @@
 ////////////////////
 
 body {
-  font-family: atomic-age;
+  font-family: sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: atomic-age;
+}
+
+p {
+  line-height: 20px;
 }
 
 * {

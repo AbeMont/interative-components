@@ -1,0 +1,104 @@
+.hero-section {
+    border-radius: 5px;
+    min-height: 250px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__img {
+        text-align: center;
+        img {
+            width: 250px;
+        }
+    }
+    &__content{
+        margin: 24px 16px;
+        padding: 0 16px;
+        border-radius: 5px;
+        color: #121212;
+        &--light-green {
+            background: #80BCA3;
+        }
+    
+    }
+
+    &--profile {
+        margin: 56px 0;
+        .hero-section__img {
+            position: absolute;
+            top: -45px;
+        }
+        .hero-section__content {
+            margin: 42px 16px;
+        }
+    }
+        
+    &--poster {
+        background-image: url("../assets/img/outer-space.jpg");
+       //background-image: url("../assets/img/texture/newspaper-texture-2.1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 450px;
+        padding: 0 0;
+        margin: 32px 0;
+    }
+    &--containerOut {
+        background-size: cover;
+    }
+    &--green {
+        background: $color-secondary-blue;
+    }
+}
+
+@media(max-width:750px){
+    .hero-section {
+        &--poster {
+            min-height: 250px;
+            background-size: cover;
+            padding: 0 0;
+        }
+        &--containerIn {
+
+        }
+        &--containerOut {
+            min-height: 450px;
+            background-size: contain;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .hero-section { 
+        flex-direction: row;
+        padding: 0 16px;
+        min-height: 450px;
+        &__img {
+            flex: 1;
+            text-align: left;
+            img {
+                width:300px;
+            }
+        }
+
+        &__content {
+            flex: 1;
+            padding: 32px;
+        }
+        &--profile {
+                justify-content: flex-end;
+            .hero-section__img {
+                position: absolute;
+                top: -55px;
+                left: 50%;
+                margin-left: -150px;
+                text-align: center;
+            }
+            .hero-section__content {
+                flex: 0;
+                flex-basis: 40%;
+            }
+        }
+     }
+}

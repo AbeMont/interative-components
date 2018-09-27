@@ -86,7 +86,9 @@
         display: inline-block;
         position: relative;
         a {
+          font-family: atomic-age;
           padding: 18px;
+          font-size: 20px;
           display: inline-block;
           position: relative;
         }
@@ -123,6 +125,16 @@
         top: 18px;
         right: -5px;
       }
+    }
+  }
+  &__logo {
+    position: relative;
+    text-align: center;
+    img {
+      width: 250px;
+      position: absolute;
+      left: 50%;
+      margin-left: -125px;
     }
   }
 }

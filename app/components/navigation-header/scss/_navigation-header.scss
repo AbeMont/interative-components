@@ -86,9 +86,8 @@
         display: inline-block;
         position: relative;
         a {
-          font-family: atomic-age;
           padding: 18px;
-          font-size: 20px;
+          font-size: 16px;
           display: inline-block;
           position: relative;
         }
@@ -122,7 +121,7 @@
         @include font-awesome;
         content: "\f107";
         position: absolute;
-        top: 18px;
+        top: 20px;
         right: -5px;
       }
     }

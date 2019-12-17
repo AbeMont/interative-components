@@ -53,7 +53,6 @@ var currentSection;
       scrollSpy.classList.remove('active');
     }
     scrollSpySections.forEach(function(section,index,array){
-      var scrollNavText = scrollNav.children[0].children[index].children[0].textContent;
 
       currentSection = section.dataset.spy;
 
@@ -84,8 +83,7 @@ function generateId(){
     return Id;
 }
 
-//generateId();
-
+// Generates the compnent 'scroll-nav' list that is fixed
 function generateEl(cb) {
     var ul = document.createElement('ul');
     var scrollList = scrollNav.appendChild(ul);

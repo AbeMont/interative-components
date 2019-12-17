@@ -1,11 +1,11 @@
 .accordion {
   width:100%;
-  background: $color-primary-5;
+  background: $color-light-grey;
   &__btn {
     padding: 16px;
     border:none;
     display: block;
-    background:$color-primary-0;
+    background:$color-secondary-blue;
     color: $color-white;
     width: 100%;
     @include global-border-bottom;
@@ -17,10 +17,10 @@
     padding:0 16px;
     max-height: 0;
     overflow-y: hidden;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s;
     &.active {
       height: auto;
-      transition: all 0.5s ease-out;
+      transition: all 0.5s;
     }
   }
 }

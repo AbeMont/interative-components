@@ -1,3 +1,5 @@
+//https: //www.liquidlight.co.uk/blog/how-do-i-update-to-gulp-4/
+
 
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
@@ -93,10 +95,10 @@ gulp.task('watch', function () {
       }
   });
 
-  gulp.watch(watchObj.sass, ['sass']);
-  gulp.watch(watchObj.html,  ['html']).on('change', browserSync.reload);
-  gulp.watch(watchObj.babel,  ['babel']).on('change', browserSync.reload);
-  gulp.watch(watchObj.assets,  ['assets']).on('change', browserSync.reload)
+  gulp.watch(watchObj.sass, gulp.series('sass'));
+  gulp.watch(watchObj.html, gulp.series('html')).on('change', browserSync.reload);
+  gulp.watch(watchObj.babel, gulp.series('babel')).on('change', browserSync.reload);
+  gulp.watch(watchObj.assets, gulp.series('assets')).on('change', browserSync.reload);
 
   watch(watchObj.sass , batch(function (events, done) {
     gulp.start('sass', done);
@@ -133,11 +135,11 @@ gulp.task('clean',function(){
 // Build: dist
 /////////////
 
-gulp.task('build:dist',['html','sass','babel']);
+//gulp.task('build:dist',['html','sass','babel']);
 
 
 ////////////////////
 // Launch the Tasks
 //////////////////
 
-gulp.task('default',['html','sass','assets','babel','watch']);
+gulp.task('default', gulp.series(['html', 'sass', 'assets', 'babel', 'watch']));
